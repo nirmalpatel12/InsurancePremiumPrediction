@@ -1,0 +1,5 @@
+setup.py
+Insurance_Premium_Prediction.egg-info/PKG-INFO
+Insurance_Premium_Prediction.egg-info/SOURCES.txt
+Insurance_Premium_Prediction.egg-info/dependency_links.txt
+Insurance_Premium_Prediction.egg-info/top_level.txt

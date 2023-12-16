@@ -1,0 +1,9 @@
+[2023-12-15 20:58:01,998] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[2023-12-15 20:58:03,966] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-12-15 20:58:03,966] 224 werkzeug - INFO -  * Debugger PIN: 369-520-209
+[2023-12-15 20:58:59,714] 224 werkzeug - INFO - 192.168.1.48 - - [15/Dec/2023 20:58:59] "GET / HTTP/1.1" 200 -
+[2023-12-15 20:59:17,683] 224 werkzeug - INFO - 192.168.1.48 - - [15/Dec/2023 20:59:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-12-15 20:59:17,883] 224 werkzeug - INFO - 192.168.1.48 - - [15/Dec/2023 20:59:17] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2023-12-15 20:59:17,883] 224 werkzeug - INFO - 192.168.1.48 - - [15/Dec/2023 20:59:17] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2023-12-15 20:59:17,916] 224 werkzeug - INFO - 192.168.1.48 - - [15/Dec/2023 20:59:17] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2023-12-15 21:00:20,735] 224 werkzeug - INFO - 127.0.0.1 - - [15/Dec/2023 21:00:20] "GET / HTTP/1.1" 200 -
