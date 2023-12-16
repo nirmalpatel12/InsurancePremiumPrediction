@@ -36,7 +36,7 @@ class CustomData:
                  children:int,
                  smoker:str,
                  region:str,
-                 expenses:float
+                
                  
                 ):
         
@@ -46,7 +46,7 @@ class CustomData:
         self.children=children
         self.smoker=smoker
         self.region=region
-        self.expenses = expenses
+        
         
 
     def get_data_as_dataframe(self):
@@ -58,7 +58,7 @@ class CustomData:
                 'children':[self.children],
                 'smoker':[self.smoker],
                 'region':[self.region],
-                'expenses':[self.expenses],
+                
                 
             }
             df = pd.DataFrame(custom_data_input_dict)

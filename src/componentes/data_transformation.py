@@ -37,7 +37,7 @@ class DataTransformation:
             logging.info('Data Transformation initiated')
             # Define which columns should be ordinal-encoded and which should be scaled
             categorical_cols = ['sex', 'smoker', 'region']
-            numerical_cols = ['age', 'bmi', 'children', 'expenses']
+            numerical_cols = ['age', 'bmi', 'children']
             
             # Define the custom ranking for each ordinal variable
             sex_categories = ['male', 'female']
@@ -71,9 +71,10 @@ class DataTransformation:
             ('cat_pipeline',cat_pipeline,categorical_cols)
             ])
             
-            return preprocessor
+        
 
             logging.info('pipline completed')
+            return preprocessor    
 
         except Exception as e:
             
@@ -110,6 +111,7 @@ class DataTransformation:
 
             ## apply the transformation
 
+             # Modify this line
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
 

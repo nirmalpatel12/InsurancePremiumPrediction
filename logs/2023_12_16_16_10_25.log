@@ -1,0 +1,29 @@
+[2023-12-16 16:10:26,382] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[2023-12-16 16:10:28,789] 26 root - INFO - Data Ingestion method starts
+[2023-12-16 16:10:28,800] 30 root - INFO - Dataset read as pandas Dataframe
+[2023-12-16 16:10:28,815] 36 root - INFO - Train test split
+[2023-12-16 16:10:28,829] 42 root - INFO - Ingestion of data is completed
+[2023-12-16 16:10:28,868] 92 root - INFO - Read train and test data completed
+[2023-12-16 16:10:28,877] 93 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   61  female  31.2         0     no  northwest  13429.04
+1   46    male  27.6         0     no  southwest  24603.05
+2   54  female  31.9         3     no  southeast  27322.73
+3   55    male  30.7         0    yes  northeast  42303.69
+4   25    male  45.5         2    yes  southeast  42112.24
+[2023-12-16 16:10:28,883] 94 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[2023-12-16 16:10:28,885] 96 root - INFO - Obtaining preprocessing object
+[2023-12-16 16:10:28,886] 37 root - INFO - Data Transformation initiated
+[2023-12-16 16:10:28,887] 47 root - INFO - Pipeline Initiated
+[2023-12-16 16:10:28,887] 76 root - INFO - pipline completed
+[2023-12-16 16:10:28,945] 118 root - INFO - Applying preprocessing object on training and testing datasets.
+[2023-12-16 16:10:28,948] 129 root - INFO - Processsor pickle in created and saved
+[2023-12-16 16:10:28,949] 29 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2023-12-16 16:10:29,776] 47 root - INFO - Model Report : {'DecisionTreeRegressor': 0.7260733664244079, 'RandomForestRegressor': 0.8547742724774701, 'GradientBoostingRegressor': 0.8666806552407147, 'SVR': -0.078223769712364}
+[2023-12-16 16:10:29,778] 60 root - INFO - Best Model Found , Model Name : GradientBoostingRegressor , R2 Score : 0.8666806552407147

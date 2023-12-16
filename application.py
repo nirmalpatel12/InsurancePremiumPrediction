@@ -19,11 +19,11 @@ def predict_datapoint():
     else:
         data=CustomData(
             age=float(request.form.get('age')),
-            sex = float(request.form.get('sex')),
+            sex = request.form.get('sex'),
             bmi = float(request.form.get('bmi')),
-            children = float(request.form.get('children')),
-            smoker = float(request.form.get('smoker')),
-            region = float(request.form.get('region')),
+            children = int(request.form.get('children')),
+            smoker = request.form.get('smoker'),
+            region = request.form.get('region'),
             
         )
         final_new_data=data.get_data_as_dataframe()

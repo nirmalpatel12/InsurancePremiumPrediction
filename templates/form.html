@@ -1,53 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Prediction Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
 <body>
-<form action="{{url_for('predict_datapoint')}}" method="POST">
-  <div class="form-group">  
-    <label for="age">age:</label>
-    <input type="text" id="age" name="age" placeholder="Enter age value (int)">
-  </div>
+  <form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">  
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" placeholder="Enter age value (int)" required>
+    </div>
 
     <div class="form-group">
-      <select id="sex" name="sex">
-        <option value="male">male</option>
-        <option value="female">female</option>
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
       </select>
     </div>
 
     <div class="form-group">  
-        <label for="bmi">bmi:</label>
-        <input type="text" id="bmi" name="bmi" placeholder="Enter bmi value (float)">
+      <label for="bmi">BMI:</label>
+      <input type="text" id="bmi" name="bmi" placeholder="Enter BMI value (float)" required>
     </div>
     
     <div class="form-group">
-        <label for="children">children:</label>
-        <input type="text" id="children" name="children" placeholder="Enter children value (int)">
+      <label for="children">Children:</label>
+      <input type="text" id="children" name="children" placeholder="Enter children value (int)" required>
     </div>
   
     <div class="form-group">
-      <select id="smoker" name="smoker">
-        <option value="yes">yes</option>
-        <option value="no">no</option>
+      <label for="smoker">Smoker:</label>
+      <select id="smoker" name="smoker" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
       </select>
     </div>
   
-         
-  
-<div class="form-group">
-  <label for="region">region:</label>
-  <select id="region" name="region">
-    <option value="southeast">southeast</option>
-    <option value="southwest">southwest</option>
-    <option value="northeast">northeast</option>
-    <option value="northwest">northwest</option>
-  
-  </select>
-</div>
-  
+    <div class="form-group">
+      <label for="region">Region:</label>
+      <select id="region" name="region" required>
+        <option value="southeast">Southeast</option>
+        <option value="southwest">Southwest</option>
+        <option value="northeast">Northeast</option>
+        <option value="northwest">Northwest</option>
+      </select>
+    </div>
 
-<div style="clear:both;"></div>
-  <input type="submit" value="Submit">
-</form>
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+  </form>
 
-{{final_result}}
+  <div class="result">
+    {{final_result}}
+  </div>
 </body>
 </html>

@@ -6,10 +6,10 @@ from exception import CustomException
 import sys
 sys.path.append('D:\\ML_projects\\InsurancePremimumPrediction\\src')
 import pandas as pd
-from src.componentes.data_ingestion import DataIngestion
+from componentes.data_ingestion import DataIngestion
 
-from src.componentes.data_transformation import DataTransformation
-from src.componentes.model_trainer import ModelTrainer
+from componentes.data_transformation import DataTransformation
+from componentes.model_trainer import ModelTrainer
 
 
 

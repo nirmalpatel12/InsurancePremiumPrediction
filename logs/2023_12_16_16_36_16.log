@@ -1,0 +1,6 @@
+[2023-12-16 16:36:17,473] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[2023-12-16 16:36:19,693] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-12-16 16:36:19,704] 224 werkzeug - INFO -  * Debugger PIN: 369-520-209
+[2023-12-16 16:36:31,956] 224 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2023 16:36:31] "GET / HTTP/1.1" 200 -
+[2023-12-16 16:36:53,000] 65 root - INFO - Dataframe Gathered
+[2023-12-16 16:36:53,363] 224 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2023 16:36:53] "POST /predict HTTP/1.1" 200 -

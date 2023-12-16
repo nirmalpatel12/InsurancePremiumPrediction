@@ -1,0 +1,25 @@
+[2023-12-16 15:40:56,241] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[2023-12-16 15:40:58,726] 26 root - INFO - Data Ingestion method starts
+[2023-12-16 15:40:58,736] 30 root - INFO - Dataset read as pandas Dataframe
+[2023-12-16 15:40:58,752] 36 root - INFO - Train test split
+[2023-12-16 15:40:58,766] 42 root - INFO - Ingestion of data is completed
+[2023-12-16 15:40:58,805] 92 root - INFO - Read train and test data completed
+[2023-12-16 15:40:58,813] 93 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   61  female  31.2         0     no  northwest  13429.04
+1   46    male  27.6         0     no  southwest  24603.05
+2   54  female  31.9         3     no  southeast  27322.73
+3   55    male  30.7         0    yes  northeast  42303.69
+4   25    male  45.5         2    yes  southeast  42112.24
+[2023-12-16 15:40:58,821] 94 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[2023-12-16 15:40:58,823] 96 root - INFO - Obtaining preprocessing object
+[2023-12-16 15:40:58,824] 37 root - INFO - Data Transformation initiated
+[2023-12-16 15:40:58,824] 47 root - INFO - Pipeline Initiated
+[2023-12-16 15:40:58,825] 76 root - INFO - pipline completed
+[2023-12-16 15:40:58,832] 141 root - INFO - Exception occured in the initiate_datatransformation

@@ -1,6 +1,5 @@
 import os
 import sys
-sys.path.append('D:\\ML_projects\\DiamondPricePrediction2\\src')
 import pickle
 import numpy as np 
 import pandas as pd
